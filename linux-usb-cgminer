@@ -1,31 +1,44 @@
-How to setup a cgminer using xubuntu 11.04 live on a USB courtesy of Kano
+How to setup a cgminer using xubuntu 11.04 live on a USB
+
+The master version of this document is here:
+ https://github.com/kanoi/linux-usb-cgminer
+
+The actual file is:
+ https://github.com/kanoi/linux-usb-cgminer/blob/master/linux-usb-cgminer
+
+The copy in cgminer (check to make sure it isn't older) is:
+ https://github.com/ckolivas/cgminer/blob/master/linux-usb-cgminer
+
+The original old verion on bitcointalk is:
+ https://bitcointalk.org/index.php?topic=28402.msg426741#msg426741
 
 Software
 ========
 Short hardware comment:
 Your mining computer doesn't need any HDD or CD/DVD/BD as long as it has at
-least 2GB of RAM, can boot USB, has some network connection to the internet and
-of course a reasonable mining ATI graphics card
+least 2GB of RAM, can boot USB, has some network connection to the internet
+and of course a reasonable mining ATI graphics card
 ... Or you can boot a windows PC with the USB to only do mining ... and ignore
-the system HDD ... wasting energy :)
+the system HDD ... wasting energy running the HDD :)
 
-To create the USB, you need of course a 4GB USB and temporarily need a PC with a
-CD (or DVD/BD) writer, a USB port and of course an internet connection to the PC
+To create the USB, you need of course a 4GB USB and temporarily need a PC
+with a CD (or DVD/BD) writer, a USB port and of course an internet
+connection to the PC
 
 1) Download the xubuntu 11.04 desktop live CD iso for amd64
    ( look here for mirrors: http://www.xubuntu.org/getubuntu )
 
-2) Burn it to CD then boot that temporarily on any PC with a CD/DVD/BD and a USB
-   port (this and the next 2 step won't effect that PC)
+2) Burn it to CD then boot that temporarily on any PC with a CD/DVD/BD and
+   a USB port (this and the next 2 step won't effect that PC)
 
 3) Plug in your 4GB USB device and it should appear on the desktop - you can
    leave it's contents as long as there is at least 2.8GB free
 
-4) Now run "Startup Disk Creator" in "Applications->System" (the system menu is
-   the little rat in the top left corner)
+4) Now run "Startup Disk Creator" in "Applications->System"
+   (the system menu is the little rat in the top left corner)
 
-(if you have no mouse you can get the menu with <ctr><esc> and navigate the menu
-with the arrow keys and <return> key)
+(if you have no mouse you can get the menu with <ctr><esc> and navigate
+the menu with the arrow keys and <return> key)
 
 From here select the boot CD as the "Source" and the USB as the "Disk to use"
 lastly move the slider to 2GB for reserved extra space
@@ -116,7 +129,7 @@ shutting down the PC to ensure all data is written to the USB
  Set "Mode:" to "Blank Screen Only"
 
 16) apt-get install ntpd
- An accurate clock is always a good idea Smiley
+ An accurate clock is always a good idea :)
 
 17) if you wish to ssh into the box you must set a password
     to do this you simply have to be logged into it at the screen and type
@@ -149,8 +162,8 @@ It will auto blank - but make sure the blank is of course just blank
 as mentioned above at 15)
 
 
-This is of course just the basics ... but it should get you a computer up and
-running and able to run cgminer
+This is of course just the basics ... but it should get you a computer
+up and running and able to run cgminer
 
 ========
 
