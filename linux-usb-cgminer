@@ -84,8 +84,6 @@ shutting down the PC to ensure all data is written to the USB
 
 9) sudo aticonfig --lsa
    this lists your ATI cards so you can see them
- sudo aticonfig --adapter=all --odgt
-   this checks it can access all the cards ...
 
 10) sudo aticonfig --adapter=all --initial
    this gets an error - no idea why but the xorg.conf is OK
@@ -142,7 +140,7 @@ shutting down the PC to ensure all data is written to the USB
  Click on Settings, then in the Settings window "Screensaver"
  Set "Mode:" to "Blank Screen Only"
 
-16) apt-get install ntpd
+16) apt-get install ntp
  An accurate clock is always a good idea :)
 
 17) if you wish to ssh into the box you must set a password
