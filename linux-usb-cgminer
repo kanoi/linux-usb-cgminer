@@ -70,6 +70,7 @@ After about 10-15 minutes you have a base xubuntu 11.04 boot USB
    Soon after the first boot and the GUI comes up you will get a popup
    asking you to upgrade to 11.10 or later
    DONT DO IT
+   Select "Don't Upgrade"
 
 6) Start a terminal
    "Applications->Accessories->Terminal Emulator"
@@ -78,6 +79,11 @@ After about 10-15 minutes you have a base xubuntu 11.04 boot USB
 
    if you have a problem here then it's probably coz the internet isn't
    available ... sort that out by reading elsewhere about routers etc
+
+   however, if you did an HDD (or USB) install and internet access is OK,
+   but it says openssh-server or screen is missing, it means you need to:
+
+   sudo apt-get update
 
 8) sudo apt-get install fglrx fglrx-amdcccle fglrx-dev
    sudo sync
@@ -91,8 +97,9 @@ shutting down the PC to ensure all data is written to the USB
 
 10) sudo aticonfig --adapter=all --initial
    this gets an error - no idea why but the xorg.conf is OK
- sudo sync
- sudo shutdown -r now
+
+   sudo sync
+   sudo shutdown -r now
 
 11) sudo aticonfig --adapter=all --odgt
    this checks it can access all the cards ...
@@ -212,7 +219,7 @@ In this example, it's currently 45% full with almost 1.1GB of free space
 
 ========
 
-The latest version (2.0.8) of cgminer is built with 11.10 (not 11.04)
+The latest version (2.0.8 or later) of cgminer is built with 11.10 (not 11.04)
 If you get the following error when running the prebuilt version in 11.04:
 
    ./cgminer: error while loading shared libraries: libtinfo.so.5: cannot open shared object file: No such file or directory
