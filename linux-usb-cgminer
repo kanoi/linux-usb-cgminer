@@ -67,6 +67,10 @@ After about 10-15 minutes you have a base xubuntu 11.04 boot USB
    then select "Try Xubuntu without installing" and wait for the desktop to
    appear (this happens by default if you wait for the timeouts)
 
+   Soon after the first boot and the GUI comes up you will get a popup
+   asking you to upgrade to 11.10 or later
+   DONT DO IT
+
 6) Start a terminal
    "Applications->Accessories->Terminal Emulator"
 
